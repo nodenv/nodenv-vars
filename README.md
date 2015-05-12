@@ -7,11 +7,11 @@ before spawning Node processes.
 ## Installation
 
 To install nodenv-vars, clone this repository into your
-`~/.nodenv/plugins` directory. (You'll need a recent version of nodenv
+`$(nodenv root)/plugins` directory. (You'll need a recent version of nodenv
 that supports plugin bundles.)
 
-    $ mkdir -p ~/.nodenv/plugins
-    $ cd ~/.nodenv/plugins
+    $ mkdir -p $(nodenv root)/plugins
+    $ cd $(nodenv root)/plugins
     $ git clone https://github.com/OiNutter/nodenv-vars.git
 
 ## Usage
@@ -40,7 +40,7 @@ Spaces are allowed in values; quoting is not necessary. Expansion and
 command substitution are not allowed. Lines beginning with `#` or any
 lines not in the format VAR=value will be ignored.
 
-Variables specified in the `~/.nodenv/vars` file will be set
+Variables specified in the `$(nodenv root)/vars` file will be set
 first. Then variables specified in `.nodenv-vars` files in any parent
 directories of the current directory will be set. Variables from the
 `.nodenv-vars` file in the current directory are set last.
