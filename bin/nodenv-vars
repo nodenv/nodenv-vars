@@ -18,6 +18,12 @@ case "$1" in
   -v | --version )
     echo "nodenv-vars 1.2.0"
     exit ;;
+  --help )
+    nodenv-help --usage vars
+    exit ;;
+  ""  | -* )
+    nodenv-help --usage vars >&2
+    exit 1 ;;
 esac
 
 traverse-nodenv-vars-files() {
