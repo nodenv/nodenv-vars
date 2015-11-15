@@ -13,10 +13,12 @@
 set -e
 [ -n "$NODENV_DEBUG" ] && set -x
 
-if [ "$1" = "--version" ] || [ "$1" = "-v" ]; then
-  echo "nodenv-vars 1.2.0"
-  exit
-fi
+# Provide nodenv completions
+case "$1" in
+  -v | --version )
+    echo "nodenv-vars 1.2.0"
+    exit ;;
+esac
 
 traverse-nodenv-vars-files() {
   local root="$1"
