@@ -15,6 +15,10 @@ set -e
 
 # Provide nodenv completions
 case "$1" in
+  --complete )
+    echo --help
+    echo --version
+    exit ;;
   -v | --version )
     echo "nodenv-vars 1.2.0"
     exit ;;
