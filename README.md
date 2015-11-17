@@ -47,9 +47,3 @@ directories of the current directory will be set. Variables from the
 
 Use the `nodenv vars` command to print all environment variables in the
 order they'll be set.
-
-## Version History
-
-**1.0.0** (April 18, 2014)
-
-* Initial public release. (Copied from [rbenv-vars](http://github.com/sstephenson/rbenv-vars))
