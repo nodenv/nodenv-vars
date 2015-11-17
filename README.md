@@ -53,8 +53,3 @@ order they'll be set.
 **1.0.0** (April 18, 2014)
 
 * Initial public release. (Copied from [rbenv-vars](http://github.com/sstephenson/rbenv-vars))
-
-## License
-
-&copy; 2014 Will McKenzie. Released under the MIT license. See
-`LICENSE` for details.
