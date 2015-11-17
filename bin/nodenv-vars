@@ -20,11 +20,11 @@ case "$1" in
     echo --version
     exit ;;
   -v | --version )
-    echo "nodenv-vars 1.2.0"
-    exit ;;
+    exec echo "nodenv-vars 1.2.0"
+    ;;
   --help )
-    nodenv-help --usage vars
-    exit ;;
+    exec nodenv-help --usage vars
+    ;;
   -* )
     nodenv-help --usage vars >&2
     exit 1 ;;
