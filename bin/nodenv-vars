@@ -25,7 +25,7 @@ case "$1" in
   --help )
     nodenv-help --usage vars
     exit ;;
-  ""  | -* )
+  -* )
     nodenv-help --usage vars >&2
     exit 1 ;;
 esac
