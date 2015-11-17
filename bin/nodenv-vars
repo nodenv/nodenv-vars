@@ -14,21 +14,21 @@ set -e
 [ -n "$NODENV_DEBUG" ] && set -x
 
 # Provide nodenv completions
-case "$1" in
-  --complete )
-    echo --help
-    echo --version
-    exit ;;
-  -v | --version )
-    exec echo "nodenv-vars 1.2.0"
-    ;;
-  --help )
-    exec nodenv-help --usage vars
-    ;;
-  -* )
-    nodenv-help --usage vars >&2
-    exit 1 ;;
-esac
+for arg; do
+  case "$arg" in
+    --complete )
+      echo --help
+      echo --version
+      exit ;;
+    -v | --version )
+      exec echo "nodenv-vars 1.2.0" ;;
+    --help )
+      exec nodenv-help vars ;;
+    * )
+      nodenv-help --usage vars >&2
+      exit 1 ;;
+  esac
+done
 
 traverse-nodenv-vars-files() {
   local root="$1"
