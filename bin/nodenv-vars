@@ -8,7 +8,7 @@
 # compatible shell.
 #
 # For more information on nodenv-vars, see:
-# https://github.com/OiNutter/nodenv-vars#readme
+# https://github.com/nodenv/nodenv-vars#readme
 
 set -e
 [ -n "$NODENV_DEBUG" ] && set -x

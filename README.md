@@ -1,6 +1,6 @@
 # nodenv-vars
 
-This is a plugin for [nodenv](https://github.com/OiNutter/nodenv)
+This is a plugin for [nodenv](https://github.com/nodenv/nodenv)
 that lets you set global and project-specific environment variables
 before spawning Node processes.
 
@@ -12,7 +12,7 @@ that supports plugin bundles.)
 
     $ mkdir -p $(nodenv root)/plugins
     $ cd $(nodenv root)/plugins
-    $ git clone https://github.com/OiNutter/nodenv-vars.git
+    $ git clone https://github.com/nodenv/nodenv-vars.git
 
 ## Usage
 
