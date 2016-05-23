@@ -17,13 +17,10 @@ set -e
 for arg; do
   case "$arg" in
     --complete )
-      echo --help
       echo --version
       exit ;;
     -v | --version )
       exec echo "nodenv-vars 1.2.0" ;;
-    --help )
-      exec nodenv-help vars ;;
     * )
       nodenv-help --usage vars >&2
       exit 1 ;;
