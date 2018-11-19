@@ -19,6 +19,10 @@
   "directories": {
     "bin": "bin"
   },
+  "files": [
+    "bin",
+    "etc"
+  ],
   "scripts": {
     "start": "bin/npm-vars",
     "posttest": "npm run lint",
