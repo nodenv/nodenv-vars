@@ -4,6 +4,8 @@ This is a plugin for [nodenv](https://github.com/nodenv/nodenv)
 that lets you set global and project-specific environment variables
 before spawning Node processes.
 
+<!-- toc -->
+
 ## Installation
 
 To install nodenv-vars, clone this repository into your
