@@ -8,7 +8,7 @@ before spawning Node processes.
 
 - [Installation](#installation)
 - [Usage](#usage)
-  * [Credits](#credits)
+- [Credits](#credits)
 
 <!-- tocstop -->
 
