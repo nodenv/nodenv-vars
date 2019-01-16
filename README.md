@@ -6,6 +6,12 @@ before spawning Node processes.
 
 <!-- toc -->
 
+- [Installation](#installation)
+- [Usage](#usage)
+  * [Credits](#credits)
+
+<!-- tocstop -->
+
 ## Installation
 
 To install nodenv-vars, clone this repository into your
