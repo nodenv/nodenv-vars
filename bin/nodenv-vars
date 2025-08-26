@@ -16,14 +16,17 @@ set -e
 # Provide nodenv completions
 for arg; do
   case "$arg" in
-    --complete )
-      echo --version
-      exit ;;
-    -v | --version )
-      exec echo "nodenv-vars 1.2.0" ;;
-    * )
-      nodenv-help --usage vars >&2
-      exit 1 ;;
+  --complete)
+    echo --version
+    exit
+    ;;
+  -v | --version)
+    exec echo "nodenv-vars 1.2.0"
+    ;;
+  *)
+    nodenv-help --usage vars >&2
+    exit 1
+    ;;
   esac
 done
 
@@ -51,7 +54,7 @@ find-nodenv-vars-files() {
   fi
 
   traverse-nodenv-vars-files "$NODENV_DIR" ||
-  [ "$NODENV_DIR" = "$PWD" ] || traverse-nodenv-vars-files "$PWD"
+    [ "$NODENV_DIR" = "$PWD" ] || traverse-nodenv-vars-files "$PWD"
 }
 
 sanitize-vars() {
@@ -68,6 +71,9 @@ sanitize-vars() {
 
 while read -r file; do
   echo "# $file"
-  { cat "$file"; echo; } | sanitize-vars
+  {
+    cat "$file"
+    echo
+  } | sanitize-vars
   echo
-done < <( find-nodenv-vars-files )
+done < <(find-nodenv-vars-files)
