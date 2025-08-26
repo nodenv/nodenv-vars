@@ -5,13 +5,13 @@
   "homepage": "https://github.com/nodenv/nodenv-vars#readme",
   "license": "MIT",
   "contributors": [
-    "Jason Karns <jason@karns.name> (http://jason.karns.name)",
+    "Jason Karns <jason.karns@gmail.com> (http://jasonkarns.com)",
     "Sam Stephenson <sstephenson@gmail.com> (http://sstephenson.us)",
     "Will McKenzie <willmckenzie@oinutter.co.uk> (http://www.oinutter.co.uk)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodenv/nodenv-vars.git"
+    "url": "git+https://github.com/nodenv/nodenv-vars.git"
   },
   "bugs": {
     "url": "https://github.com/nodenv/nodenv-vars/issues"
@@ -25,14 +25,12 @@
   ],
   "scripts": {
     "start": "bin/npm-vars",
+    "test": "bats ${CI:+--tap} test",
     "posttest": "npm run lint",
-    "lint": "git ls-files bin etc | xargs shellcheck",
-    "postversion": "npm publish",
-    "prepublishOnly": "npm run publish:github && npm run publish:brew",
-    "publish:brew": "brew-publish",
-    "publish:github": "git push --follow-tags"
+    "lint": "git ls-files bin etc script */*.*sh | xargs shellcheck",
+    "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "brew-publish": "^2.3.1"
+    "shellcheck": "^4.1.0"
   }
 }

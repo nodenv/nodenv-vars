@@ -18,28 +18,36 @@ To install nodenv-vars, clone this repository into your
 `$(nodenv root)/plugins` directory. (You'll need a recent version of nodenv
 that supports plugin bundles.)
 
-    $ mkdir -p $(nodenv root)/plugins
-    $ cd $(nodenv root)/plugins
-    $ git clone https://github.com/nodenv/nodenv-vars.git
+```console
+mkdir -p $(nodenv root)/plugins
+cd $(nodenv root)/plugins
+git clone https://github.com/nodenv/nodenv-vars.git
+```
 
 ## Usage
 
 Define environment variables in an `.nodenv-vars` file in your project,
 one variable per line, in the format `VAR=value`. For example:
 
-    HUBOT_CAMPFIRE_ACCOUNT=nodenv
-    HUBOT_CAMPFIRE_TOKEN=somerandomtoken
-    HUBOT_CAMPFIRE_ROOMS=some,campfire,rooms
+```dotenv
+HUBOT_CAMPFIRE_ACCOUNT=nodenv
+HUBOT_CAMPFIRE_TOKEN=somerandomtoken
+HUBOT_CAMPFIRE_ROOMS=some,campfire,rooms
+```
 
 You can perform variable substitution with the traditional `$`
 syntax. For example, to append to `HUBOT_CAMPFIRE_ROOMS`:
 
-    HUBOT_CAMPFIRE_ROOMS=$HUBOT_CAMPFIRE_ROOMS:some,extra,rooms
+```dotenv
+HUBOT_CAMPFIRE_ROOMS=$HUBOT_CAMPFIRE_ROOMS:some,extra,rooms
+```
 
 You may also have conditional variable assignments, such that a
 variable will **only** be set if it is not already defined or is blank:
 
-    USER_ID?=OiNutter
+```dotenv
+USER_ID?=OiNutter
+```
 
 In the above case, `USER_ID` will only be set if `$USER_ID` is
 currently empty (i.e., if `[ -z "$USER_ID" ]` is true).

@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
+# shellcheck shell=bash
 
 eval "$(nodenv-vars)"
-
