@@ -1,6 +1,6 @@
 # nodenv-vars
 
-[nodenv][] plugin to set global and project-specific environment variables before spawning Node processes
+[nodenv][] plugin to set global and project-specific environment variables
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/nodenv/nodenv-vars/test.yml?label=tests&logo=github)](https://github.com/nodenv/nodenv-vars/actions/workflows/test.yml)
 [![Latest GitHub Release](https://img.shields.io/github/v/release/nodenv/nodenv-vars?label=github&logo=github&sort=semver)](https://github.com/nodenv/nodenv-vars/releases/latest)
