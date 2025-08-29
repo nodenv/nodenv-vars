@@ -1,8 +1,11 @@
 # nodenv-vars
 
-This is a plugin for [nodenv](https://github.com/nodenv/nodenv)
-that lets you set global and project-specific environment variables
-before spawning Node processes.
+[nodenv][] plugin to set global and project-specific environment variables before spawning Node processes
+
+[![Tests](https://img.shields.io/github/actions/workflow/status/nodenv/nodenv-vars/test.yml?label=tests&logo=github)](https://github.com/nodenv/nodenv-vars/actions/workflows/test.yml)
+[![Latest GitHub Release](https://img.shields.io/github/v/release/nodenv/nodenv-vars?label=github&logo=github&sort=semver)](https://github.com/nodenv/nodenv-vars/releases/latest)
+[![Latest Homebrew Release](<https://img.shields.io/badge/dynamic/regex?label=homebrew-nodenv&logo=homebrew&logoColor=white&url=https%3A%2F%2Fraw.githubusercontent.com%2Fnodenv%2Fhomebrew-nodenv%2Frefs%2Fheads%2Fmain%2FFormula%2Fnodenv-vars.rb&search=archive%2Frefs%2Ftags%2Fv(%3F%3Cversion%3E%5Cd%2B.*).tar.gz&replace=v%24%3Cversion%3E>)](https://github.com/nodenv/homebrew-nodenv/blob/main/Formula/nodenv-vars.rb)
+[![Latest npm Release](https://img.shields.io/npm/v/@nodenv/nodenv-vars?logo=npm&logoColor=white)](https://www.npmjs.com/package/@nodenv/nodenv-vars/v/latest)
 
 <!-- toc -->
 
@@ -69,3 +72,5 @@ order they'll be set.
 Forked from [Sam Stephenson](https://github.com/sstephenson)'s
 [rbenv-vars](https://github.com/rbenv/rbenv-vars) by [Will
 McKenzie](https://github.com/oinutter) and modified for nodenv.
+
+[nodenv]: https://github.com/nodenv/nodenv
