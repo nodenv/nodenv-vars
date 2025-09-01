@@ -1,7 +1,7 @@
 {
   "name": "@nodenv/nodenv-vars",
   "version": "1.2.0",
-  "description": "A nodenv plugin that safely sets global and per-project environment variables",
+  "description": "A nodenv plugin to set global and project-specific environment variables.",
   "homepage": "https://github.com/nodenv/nodenv-vars#readme",
   "license": "MIT",
   "contributors": [
