@@ -31,6 +31,6 @@
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "shellcheck": "^4.1.0"
+    "shellcheck": "4"
   }
 }
